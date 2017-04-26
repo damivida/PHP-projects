@@ -26,7 +26,7 @@
         ]);
 
         var options = {
-          title: 'My Daily Activities',
+          title: 'App statistics',
           pieSliceText: 'label',
           backgroundColor: 'transparent'    
         };

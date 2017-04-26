@@ -2,8 +2,10 @@
 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
-define('SITE_ROOT', DS . 'Programi' . DS . 'XAMPP' . DS . 'htdocs' . DS . 'trening');
+//derinifranje putenje do foldera u kojm  je aplikacija
+define('SITE_ROOT', DS . 'Programi' . DS . 'XAMPP' . DS . 'htdocs' . DS .  'PHP-projects' . DS . 'trening');
 
+//definiranje putanje do foldera includes
 defined('INCLUDES_PATH') ? null : define('INCLUDES_PATH', SITE_ROOT . DS . 'admin' . DS . 'includes');
     
     

@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
                 <hr>
 
                 <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+                <p><span class="glyphicon glyphicon-glass"></span></p>
 
                 <hr>
 
@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading"><?php echo $comment->author; ?>
-                            <small><?php echo date("l jS \of F Y h:i:s A")?></small>
+                           
                         </h4><?php echo $comment->body; ?>
                      
                     </div>
