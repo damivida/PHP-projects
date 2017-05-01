@@ -19,8 +19,9 @@ if (isset($_POST['update'])) {
    
 
    $user->first_name= $_POST['first_name'];     
-   $user->last_name = $_POST['last_name'];;    
-   $user->email = $_POST['email'];;    
+   $user->last_name = $_POST['last_name'];    
+   $user->email = $_POST['email'];
+   $user->password = $_POST['password'];    
    $user->rang = $_POST['rang'];
    $user->status = $_POST['status'];
     
@@ -29,7 +30,6 @@ if (isset($_POST['update'])) {
      redirect("index.php");
         
      } 
-
 
 
 
@@ -73,6 +73,7 @@ if (isset($_POST['update'])) {
        <label for="email">Email</label>
        <input type="text" class="form-control" name="email" value="<?php echo $user->email;?>"/>
     </div>
+  
     <div class="form-group"> 
         <select  name="rang">
             <option value="<?php echo $user->rang;?>">Odaberi Pojas</option>
@@ -91,7 +92,11 @@ if (isset($_POST['update'])) {
         </select>
     </div>
     <div class ="form-group">
-       <input type="submit" class="btn btn-primary pull-right" name="update" value = "Promijni"/>
+      <a href="change_password.php?id=<?php echo $_GET['id'] ?>" class="btn btn-info pull-right" role="button">Promijeni lozinku</a>
+    </div>
+    
+    <div class ="form-group">
+       <input type="submit" class="btn btn-primary pull-left" name="update" value = "Promijni podatke"/>
     </div>
   
     
