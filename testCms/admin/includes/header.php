@@ -1,10 +1,7 @@
 <?php
 ob_start();
-require_once("includes/init.php");
-
+require_once("init.php");
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +14,7 @@ require_once("includes/init.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>TestApp</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

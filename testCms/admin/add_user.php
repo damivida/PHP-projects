@@ -70,7 +70,7 @@
     <div class="form-group"> 
         <select  name="rang">
             <option value="pojas">Odaberi Pojas</option>
-            <option value=">white_belt">white_belt</option>
+            <option value="white_belt">white_belt</option>
             <option value="blue_belt">blue_belt</option>
             <option value="purple_belt">purple_belt</option>
             <option value="brown_belt">brown_belt</option>

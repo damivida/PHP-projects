@@ -1,5 +1,10 @@
+<?php
+/*ob_start();
+require_once("admin/includes/init.php");*/
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
 

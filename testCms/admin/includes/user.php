@@ -15,7 +15,24 @@
     public $rang;
     public $status;
      
- }
 
+
+
+      public static function verify_user($first_name,$password) {
+          
+        global $database;
+        
+        $first_name = $database->escape_string($first_name);
+        $password = $database->escape_string($password);
+        
+        $sql = "SELECT * FROM " . self::$db_table . " WHERE first_name = '$first_name' ";
+        $sql .= "AND password = '$password' ";
+        
+        $objectArray3 = self::find_query($sql);
+        
+        return !empty($objectArray3) ? array_shift($objectArray3) : false;
+    }
+
+}    
 
 ?>
