@@ -15,29 +15,7 @@ class Session {
     
 
     
-    //message
-    public function message($msg="") {
-        
-        if (!empty($msg)) {
-            
-            $msg = $_SESSION['message'];
-        } else {
-            
-            return $this->message;
-        }
-    }
-    
-    //check message
-     private function check_message() {
-     
-         if(isset($_SESSION['message'])) {
-             
-             $this->message = $_SESSION['message'];
-             unset($_SESSION['message']);
-         } else {
-             $this->message="";
-         }
-    }
+
      
     
 

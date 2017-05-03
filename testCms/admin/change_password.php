@@ -1,10 +1,13 @@
 <?php include("includes/header.php"); ?>
 <?php include("includes/navigation.php");?>  
-
+<?php if(!$session->is_signed_in()) {
+    
+    redirect("login.php");
+}
   
+?>
+
 <?php
-
-
 
 if (empty($_GET['id'])) {
     
