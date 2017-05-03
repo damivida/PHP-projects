@@ -1,7 +1,9 @@
-<?php
-/*ob_start();
-require_once("admin/includes/init.php");*/
-?>
+<?php require_once("admin/includes/init.php");?>
+
+<?php if(!$session->is_signed_in()) {
+    
+    redirect("admin/login.php");
+}?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +38,7 @@ require_once("admin/includes/init.php");*/
 
 
     <!-- Navigation -->
-<?php include("navigation.php"); ?>
+    <?php include("navigation.php"); ?>
 
     <!-- Page Content -->
     <div class="container">

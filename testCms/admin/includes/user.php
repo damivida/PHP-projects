@@ -22,9 +22,14 @@
           
         global $database;
         
+        //ESCAPE STRING  
         $first_name = $database->escape_string($first_name);
         $password = $database->escape_string($password);
         
+        //PASSWORD CRYPT  
+        $password = $database->password_crypt($password);
+          
+        //SQL SELECT  
         $sql = "SELECT * FROM " . self::$db_table . " WHERE first_name = '$first_name' ";
         $sql .= "AND password = '$password' ";
         

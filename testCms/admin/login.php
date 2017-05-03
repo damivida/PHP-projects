@@ -9,10 +9,7 @@ if (isset($_POST['submit'])) {
     $password = trim($_POST['password']);
     
     
-    $hash = "$2y$10$";
-    $salt = "kaijekundjzsjnegzjrn65";
-    $hash_and_salt = $hash . $salt;
-    $password = crypt($password, $hash_and_salt);
+    
     
    
     
@@ -22,15 +19,12 @@ if (isset($_POST['submit'])) {
     $user = User::verify_user($first_name,$password);
     
     
-    if ($user && $user->status=='admin') {
+    if ($user) {
     $session->login($user);
-    redirect('index.php');
-    } elseif($user && $user->status=='user') {
-        $session->login($user);
-        redirect('../index.php');
+    redirect('../index.php');
     } else {
         
-        $the_message= " Username ili password nisu tocni";
+        $the_message= " Ime ili lozinka nisu točni";
         
     }
     

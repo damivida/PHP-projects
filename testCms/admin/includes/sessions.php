@@ -55,6 +55,9 @@ class Session {
            $this->user_id = $_SESSION['user_id'] = $user->id;
            $this->user_id = $_SESSION['first_name'] = $user->first_name;
            $this->user_id = $_SESSION['last_name'] = $user->last_name;
+           $this->user_id = $_SESSION['email'] = $user->email;
+           $this->user_id = $_SESSION['rang'] = $user->rang;
+           $this->user_id = $_SESSION['status'] = $user->status;
            
            $this->signed_in = true;
        }

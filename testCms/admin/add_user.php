@@ -6,18 +6,19 @@
 
     if (isset($_POST['submit'])) {
         
-        $passwordLog = $_POST['password'];
-        $hash = "$2y$10$";
-        $salt = "kaijekundjzsjnegzjrn65";
-        $hash_and_salt = $hash . $salt;
-        $passwordLog = crypt($passwordLog, $hash_and_salt);
         
+        
+        //PASSWORD CRYPT
+       $password_created = $database->password_crypt($_POST['password']);
+        
+           
+        //USER CREATE   
        $user = new User();
         
        $user->first_name = $_POST['first_name'];
        $user->last_name = $_POST['last_name'];
        $user->email = $_POST['email'];
-       $user->password = $passwordLog;  
+       $user->password = $password_created;  
        $user->rang = $_POST['rang']; 
        $user->status = $_POST['status']; 
         

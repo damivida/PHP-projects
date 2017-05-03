@@ -21,7 +21,6 @@ if (isset($_POST['update'])) {
    $user->first_name= $_POST['first_name'];     
    $user->last_name = $_POST['last_name'];    
    $user->email = $_POST['email'];
-   $user->password = $_POST['password'];    
    $user->rang = $_POST['rang'];
    $user->status = $_POST['status'];
     

@@ -23,16 +23,6 @@ function redirect($location) {
     
 }
 
-//PASSWORD CRIPT
-
-function password_crypt($password_log) {
-    
-     
-     $hash = "$2y$10$";
-     $salt = "kaijekundjzsjnegzjrn65";
-     $hash_and_salt = $hash . $salt;
-     $password_log = crypt($password_log, $hash_and_salt);
-}
 
 
 ?>

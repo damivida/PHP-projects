@@ -16,20 +16,12 @@ $user= User::find_by_id($_GET['id']);
 
 if (isset($_POST['update'])) {
     
-   $passwordLog = $_POST['password'];
-   $hash = "$2y$10$";
-   $salt = "kaijekundjzsjnegzjrn65";
-   $hash_and_salt = $hash . $salt;
-   $passwordLog = crypt($passwordLog, $hash_and_salt);
- 
-    
+   //PASSWORD CRYPT
+   $password_changed = $database->password_crypt($_POST['password']);
    
+   $user->password = $password_changed;    
    
-    
-   $user->password = $passwordLog;    
-   
-    
-     $user->save();
+    $user->save();
     
      redirect("index.php");
         

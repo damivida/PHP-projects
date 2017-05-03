@@ -53,6 +53,16 @@ class Database {
         return $escapedString;
     }
     
+    //PASSWORD CRYPT
+    public function password_crypt($password) {
+        
+    $hash = "$2y$10$";
+    $salt = "kaijekundjzsjnegzjrn65";
+    $hash_and_salt = $hash . $salt;
+    $password = crypt($password, $hash_and_salt);
+        return $password;
+    }
+    
     //INSERT ID
     
       public function insert_id() {
