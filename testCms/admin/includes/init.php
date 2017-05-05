@@ -6,6 +6,7 @@ require_once("db_object.php");
 require_once("functions.php");
 require_once("user.php");
 require_once("sessions.php");
+require_once("posts.php");
 
 
 ?>

@@ -37,14 +37,14 @@
                     <li>
                         <a href="./add_user.php"><i class="fa fa-fw fa-bar-chart-o"></i> Dodaj polaznika</a>
                     </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                     <li>
+                        <a href="./user_review.php"><i class="fa fa-fw fa-table"></i> Pregled svih polaznika</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="add_post.php"><i class="fa fa-fw fa-edit"></i> Dodaj post</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        <a href="posts_review.php"><i class="fa fa-fw fa-desktop"></i> Pregled postova</a>
                     </li>
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
